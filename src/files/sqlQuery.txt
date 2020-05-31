@@ -1,0 +1,20 @@
+Question -
+A company maintains the data of its employees in their EMPLOYEE
+table. Write a query to print all pairs of employee names where the salary
+of the first employee is less than the salary of the second employee.
+Sort the output by the increasing order of first employee's ID and second
+employee's salary.
+
+Each row in the output must contain:
+1. The name of the first employee
+2. The name of the second employee, whose salary is more than the
+salary of the first employee
+-------------------------------------
+
+Logic - self join is require for finding all the pairs.
+
+-------------------------------------
+Answer -
+    select e1.name,e2.name from employee as e1, employee as e2
+    where e1.salary < e2.salary and e1.id <> e2.id
+    order by e1.id,e2.salary;
