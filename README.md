@@ -28,5 +28,5 @@ Copy the names and category in a new CSV (comma separated values) file which can
 - All entries and header should be present in the CSV file 
 
 ### Output:  
-- Helen, Kid\
+- Helen, Kid
 - Toshi, Adult
